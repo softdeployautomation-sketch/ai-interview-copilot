@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activate — AI Interview Copilot</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 560px;
+      width: 100%;
+    }
+    h1 { font-size: 24px; margin-bottom: 6px; }
+    .subtitle { color: #c4b5fd; font-size: 14px; margin-bottom: 30px; }
+    .step {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px;
+      border-left: 3px solid #8b5cf6;
+    }
+    .step-num {
+      display: inline-block;
+      background: #8b5cf6;
+      color: white;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-right: 8px;
+    }
+    .step-title { font-weight: 600; font-size: 15px; margin-bottom: 8px; }
+    .step-body { color: #cbd5e1; font-size: 13px; line-height: 1.5; }
+    .hwid {
+      background: #0f0f23;
+      border: 1px solid #6366f1;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 13px;
+      color: #a5b4fc;
+      cursor: pointer;
+      user-select: all;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hwid-copy-btn {
+      background: #6366f1;
+      border: none;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(0,0,0,0.3);
+      color: white;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: 'SF Mono', Monaco, monospace;
+      outline: none;
+      margin-top: 8px;
+    }
+    textarea { min-height: 80px; resize: vertical; }
+    input:focus, textarea:focus { border-color: #8b5cf6; }
+    button.primary {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+    button.primary:hover { opacity: 0.9; }
+    .message {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .message.success { background: rgba(34,197,94,0.15); border: 1px solid #22c55e; color: #86efac; }
+    .message.error { background: rgba(239,68,68,0.15); border: 1px solid #ef4444; color: #fca5a5; }
+    a { color: #c4b5fd; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🔐 Activate AI Interview Copilot</h1>
+    <div class="subtitle">Enter your license key to unlock the app</div>
+
+    <div class="step">
+      <div class="step-title"><span class="step-num">1</span>Send this Hardware ID to support</div>
+      <div class="step-body">Email your purchase receipt + this Hardware ID to <a href="mailto:support@buildwithai.com">support@buildwithai.com</a></div>
+      <div class="hwid" onclick="copyHwid()">
+        <span id="hwid-text">{{ hwid }}</span>
+        <button class="hwid-copy-btn" onclick="event.stopPropagation(); copyHwid()">Copy</button>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title"><span class="step-num">2</span>Paste your license key below</div>
+      <div class="step-body">We'll email you a key generated for your machine.</div>
+      <form method="POST" action="/activate">
+        <textarea name="license_key" placeholder="Paste license key here..." required></textarea>
+        <button type="submit" class="primary">Activate</button>
+      </form>
+    </div>
+
+    {% if message %}
+      <div class="message {{ 'success' if success else 'error' }}">{{ message }}</div>
+    {% endif %}
+  </div>
+
+  <script>
+    function copyHwid() {
+      const t = document.getElementById('hwid-text').textContent.trim();
+      navigator.clipboard.writeText(t).then(() => {
+        const btn = document.querySelector('.hwid-copy-btn');
+        btn.textContent = '✅ Copied';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

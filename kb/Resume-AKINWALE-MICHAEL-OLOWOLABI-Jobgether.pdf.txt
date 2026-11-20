@@ -1,0 +1,83 @@
+-- page 1 --
+AKINWALE MICHAEL OLOWOLABI
+olowolabiakinwale@gmail.com  •  +234 915 841 2345  •  Lagos, Nigeria  •   github.com/mikeolab
+SUMMARY
+AI and software engineer with over 3 years of experience across SaaS development, AI-powered automation, software quality
+engineering and technical delivery. Builds backend services, web applications, integrations and automation workflows using
+Python, FastAPI, JavaScript/TypeScript and modern AI-assisted development tools. Recent work includes client SaaS products,
+AI-enabled business systems, a custom cybersecurity application, and an AI video automation platform. Comfortable owning work
+from requirements and implementation through testing, deployment and ongoing improvement, with a strong foundation in API
+security, Linux infrastructure, CI/CD and mentoring.
+EXPERIENCE
+Independent Product Development,  Full-Stack & Cybersecurity Application Engineer
+2026 - Present
+Designed and built a custom cybersecurity application focused on helping organizations monitor and manage endpoints and
+support security operations.
+Set up and administered an Ubuntu-based VPS environment, working with Linux services, server configuration, networking and
+operational troubleshooting.
+Configured Cloudflare DNS and domain routing, and worked with HTTPS/TLS setup to support secure access to hosted services.
+Integrated and evaluated remote monitoring and management capabilities, emphasizing practical deployment, maintainability and
+controlled operating costs.
+Applied AI-assisted development workflows alongside manual verification and testing.
+Freelance,  AI Automation Developer & SaaS Builder
+Apr 2026 - Present
+Built and shipped a lead-extraction SaaS platform (v1 and v2) for a paying client using Python, FastAPI, Streamlit and
+WebSocket-based real-time automation.
+Developed an HR recruitment extraction tool with multi-query batch processing and an automated candidate pipeline.
+Building Channelry, an AI video automation platform coordinating content generation and production workflows. Website:
+channelryapp.sbs.
+Developed Chrome extensions and workflow automation tools using AI-first development practices, including coding agents with
+human review and functional testing.
+Owned delivery across requirements, implementation, debugging and iterative improvements for multiple concurrent initiatives.
+Geek Marketing AI,  AI Automation Specialist
+Sep 2025 - Apr 2026
+Built an HR onboarding automation in GoHighLevel, including digital intake, 15+ custom employee fields, automated tagging and
+workflows integrated with OnPay and Shift4 through Make.com.
+Upgraded a GHL chatbot into a memory-enabled AI lead workflow using 15 behavioral tags, keyword-triggered automation and
+conversation-history logging to Google Sheets.
+Designed integration workflows across Shift4, MarginEdge, Freepour and BarVision, including requirements for sales
+synchronization, inventory tracking and system migration.
+Managed cross-platform automation flows connecting GoHighLevel, Make.com, Google Drive, OnPay and Shift4. Website:
+wavebarandlounge.com.
+Tcall Inc,  QA Engineer
+May 2025 - Apr 2026
+Led hands-on quality engineering for an AI Agent Call Service platform and a healthcare platform, covering web applications,
+APIs and integrations.
+Built and maintained Playwright automation, including end-to-end call-flow tests integrating ElevenLabs voice synthesis and call-
+routing services.
+Achieved 100% API test coverage across 200+ telecom endpoints and validated webhook integrations supporting service
+reliability.
+For the Medcor platform, validated 219 API endpoints and role-based access across Doctor, Patient, Admin and Super Admin
+roles.
+Migrated UI automation from Cypress to Playwright, automated 240+ workflow tests and reduced regression testing from two
+days to four hours.
+Built a centralized QA dashboard with execution logs, reporting and Teams/email alerts; mentored junior QA engineers.
+AKINWALE MICHAEL OLOWOLABI - page 1 of 2
+
+-- page 2 --
+Confidios,  QA Engineer
+Sep 2024 - Oct 2025
+Validated integrations between a self-sovereign data platform and customer systems, focusing on API behavior, authentication
+and secure test data.
+Built and maintained a modular Cypress automation framework, reducing test maintenance overhead by 30%.
+Created scheduled smoke and regression suites that delivered results to Slack and contributed to a 45% reduction in production
+defects.
+Worked with backend engineers to validate new endpoints, authentication logic and release readiness.
+Upwork,  Freelance, Automation Engineer & Solution Architect
+Jun 2023 - Jul 2024
+Delivered software solutions, browser automation and integration workflows for clients across web and mobile projects.
+Connected CRMs, online forms and spreadsheets to reduce repetitive manual work and improve information flow.
+Translated client requirements into implementation plans, identified automation opportunities and managed concurrent deliveries
+independently.
+EDUCATION
+WorldQuant University
+Master of Science  •  Financial Engineering
+National Open University of Nigeria
+Bachelor of Science  •  Computer Science
+LICENSES & CERTIFICATIONS
+Certified Automation Engineer
+Issued 2025
+Certified Software Quality Engineer
+SKILLS
+Python   •   FastAPI   •   JavaScript   •   TypeScript   •   Node.js   •   REST APIs   •   WebSockets   •   HTML   •   CSS   •   OpenAI
+AKINWALE MICHAEL OLOWOLABI - page 2 of 2
