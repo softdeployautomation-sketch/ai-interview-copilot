@@ -318,6 +318,14 @@ Instead of sending raw CV + role + KB every time (risking truncation):
 | 3 | Login incognito → no 502, session cookie < 4093 bytes | ✅ |
 | 4 | Always On → random speech → no answer, no LLM call | ✅ |
 | 5 | Always On → actual question → auto-answer via Channelry | ✅ |
+
+## Phase 4 — GitHub Public Repo ✅ COMPLETE
+
+- Repo: `softdeployautomation-sketch/ai-interview-copilot`
+- URL: `https://github.com/softdeployautomation-sketch/ai-interview-copilot`
+- Branch: `master` (default)
+- 24 files pushed, .gitignore excludes .env, .license, __pycache__, .DS_Store, node_modules
+- _STEPS.md tracked (playbook insurance)
 | 6 | Listen → speak → Stop → `## Lines to say` answer | ✅ |
 | 7 | `POST /api/assist` → CV-grounded answer | ✅ |
 
